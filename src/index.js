@@ -1,14 +1,25 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.scss";
+import Realtors from "./components/Realtors";
+import Features from "./components/Features";
+import Story from "./components/Story";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import Main from "./components/Main";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      New one
+    <div className="container">
+      <Main />
+      <Sidebar />
+      <Realtors />
+      <Features />
+      <Story />
+      <Gallery />
+      <Footer />
     </div>
   );
 }
