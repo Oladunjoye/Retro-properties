@@ -1,8 +1,8 @@
-.story{
-  .story-picture{
-    background: ivory
+.story-picture{
+    background: orange;
+     grid-column: fullwidth-start / col-end 4;
   }
-  .story-content{
-    background: wheat;
+.story-content{
+    background: orangered;
+    grid-column: col-start 5 / fullwidth-end;
   }
-}

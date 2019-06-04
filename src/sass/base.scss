@@ -35,5 +35,11 @@ body{
 .container{
   display: grid;
   grid-template-rows: 80vh auto 40vw repeat(3, auto);
-  grid-template-columns: [sidebar-start]8rem[sidebar-end fullwidth-start] 1fr [center-start]repeat(8, [col-start]minmax(auto, 14rem)[col-end])[center-end] 1fr [fullwidth-end]
+  grid-template-columns: [sidebar-start]8rem[sidebar-end fullwidth-start] minmax(6rem,1fr) [center-start]repeat(8, [col-start]minmax(auto, 14rem)[col-end])[center-end] minmax(6rem,1fr) [fullwidth-end];
+
+  
+  & > * {
+    padding: 30px;
+    font-size: 3rem;
+  }
 }
