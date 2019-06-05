@@ -1,4 +1,23 @@
 .features{
-  background: blueviolet;
-  grid-column: fullwidth-start /fullwidth-end
+
+  margin: 15rem 0;
+  grid-column: fullwidth-start /fullwidth-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  grid-gap: 6rem;
+  align-items: center;
+
+  img,
+  svg{
+    color: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    color: $color-primary;
+    
+
+  }
+
+  .feature__text{
+    font-size: 1.7rem;
+  }
 }
