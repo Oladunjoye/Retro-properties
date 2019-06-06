@@ -12,10 +12,14 @@
 
 .heading-2{
   @extend %heading;
+  font-style: italic;
+  font-size: 4rem;
+  color
 }
 
 .heading-3{
   @extend %heading;
+  font-size: 1.4rem;
   
 }
 

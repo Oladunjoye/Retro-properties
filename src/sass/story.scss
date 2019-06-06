@@ -3,6 +3,7 @@
      grid-column: fullwidth-start / col-end 4;
   }
 .story-content{
-    background: orangered;
+    background: $color-grey-light-1;
     grid-column: col-start 5 / fullwidth-end;
+    padding: 6rem 12rem;
   }
