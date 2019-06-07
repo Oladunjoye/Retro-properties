@@ -1,9 +1,37 @@
-.story-picture{
-    background: orange;
+.story{
+  &-picture{
+    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary-dark, .5)),url(/images/back.jpg);
+    background-position: cover; 
      grid-column: fullwidth-start / col-end 4;
+
+     display: grid;
+     grid-template-columns: repeat(6,1fr);
+     grid-template-rows: repeat(6,1fr);
+      
+     &-1{
+       width: 100%;
+       grid-column: 2/6;
+       grid-row: 2/6;
+     }
+     &-2{
+      width: 120%;
+      z-index: 20;
+      grid-column: 4/-1;
+      grid-row: 4/-1;
+    }
+
   }
-.story-content{
+  &-content{
     background: $color-grey-light-1;
     grid-column: col-start 5 / fullwidth-end;
     padding: 6rem 12rem;
-  }
+
+ &-text{
+   font-size: 1.5rem;
+   font-style:italic;
+   margin-bottom: 4rem;
+
+ }
+}
+
+}

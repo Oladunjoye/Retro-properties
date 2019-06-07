@@ -1,4 +1,25 @@
 main{
-  background: peru;
+  background: $color-grey-dark-1;
   grid-column: fullwidth-start /  col-end 6;
+  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)),url(/images/hero.jpeg);
+  background-size: cover;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-position: center;
+  align-content: center;
+
+  &-seeon{
+  //  &:before{
+  //    content :"";
+
+  //  }
+  }
+  &header-seenon-logos{
+    display: flex;
+    flex-basis: 1 1 25%;
+    justify-content: space-between;
+  }
 }
